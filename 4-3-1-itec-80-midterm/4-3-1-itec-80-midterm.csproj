@@ -10,6 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="Lending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Borrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UpdateBorrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="AddBorrower.cs">
       <SubType>Form</SubType>
     </Compile>

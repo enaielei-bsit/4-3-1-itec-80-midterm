@@ -7,6 +7,9 @@
         public static AddBook addBook;
         public static UpdateBook updateBook;
         public static AddBorrower addBorrower;
+        public static UpdateBorrower updateBorrower;
+        public static Borrow borrow;
+        public static Lending lending;
 
         public static User user;
     }

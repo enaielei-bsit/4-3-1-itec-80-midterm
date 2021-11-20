@@ -1,6 +1,6 @@
 ﻿namespace _4_3_1_itec_80_midterm
 {
-    partial class SignIn
+    partial class UpdateBorrower
     {
         /// <summary>
         /// Required designer variable.
@@ -29,43 +29,53 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.password = new System.Windows.Forms.TextBox();
-            this.username = new System.Windows.Forms.TextBox();
+            this.familyName = new System.Windows.Forms.TextBox();
+            this.givenName = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
             this.submit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.password);
-            this.groupBox1.Controls.Add(this.username);
+            this.groupBox1.Controls.Add(this.familyName);
+            this.groupBox1.Controls.Add(this.givenName);
+            this.groupBox1.Controls.Add(this.email);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(260, 81);
+            this.groupBox1.Size = new System.Drawing.Size(260, 110);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Credentials";
+            this.groupBox1.Text = "Information";
             // 
-            // password
+            // familyName
             // 
-            this.password.Location = new System.Drawing.Point(6, 51);
-            this.password.Name = "password";
-            this.password.PasswordChar = '●';
-            this.password.PlaceholderText = "Password";
-            this.password.Size = new System.Drawing.Size(248, 23);
-            this.password.TabIndex = 1;
+            this.familyName.Location = new System.Drawing.Point(6, 80);
+            this.familyName.Name = "familyName";
+            this.familyName.PlaceholderText = "Family Name";
+            this.familyName.Size = new System.Drawing.Size(248, 23);
+            this.familyName.TabIndex = 2;
             // 
-            // username
+            // givenName
             // 
-            this.username.Location = new System.Drawing.Point(6, 22);
-            this.username.Name = "username";
-            this.username.PlaceholderText = "Username";
-            this.username.Size = new System.Drawing.Size(248, 23);
-            this.username.TabIndex = 0;
+            this.givenName.Location = new System.Drawing.Point(6, 51);
+            this.givenName.Name = "givenName";
+            this.givenName.PlaceholderText = "Given Name";
+            this.givenName.Size = new System.Drawing.Size(248, 23);
+            this.givenName.TabIndex = 1;
+            // 
+            // email
+            // 
+            this.email.Location = new System.Drawing.Point(6, 22);
+            this.email.Name = "email";
+            this.email.PlaceholderText = "Email";
+            this.email.ReadOnly = true;
+            this.email.Size = new System.Drawing.Size(248, 23);
+            this.email.TabIndex = 0;
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(12, 109);
+            this.submit.Location = new System.Drawing.Point(12, 129);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(260, 40);
             this.submit.TabIndex = 1;
@@ -73,19 +83,19 @@
             this.submit.UseVisualStyleBackColor = true;
             this.submit.Click += new System.EventHandler(this.Submit);
             // 
-            // SignIn
+            // UpdateBorrower
             // 
             this.AcceptButton = this.submit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 161);
+            this.ClientSize = new System.Drawing.Size(284, 181);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "SignIn";
+            this.Name = "UpdateBorrower";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sign In";
+            this.Text = "Update Borrower";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -95,8 +105,9 @@
         #endregion
 
         private GroupBox groupBox1;
-        private TextBox password;
-        private TextBox username;
+        private TextBox givenName;
+        private TextBox email;
         private Button submit;
+        private TextBox familyName;
     }
 }

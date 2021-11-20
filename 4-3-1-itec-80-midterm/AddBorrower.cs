@@ -13,7 +13,7 @@
             string givenName = this.givenName != null ? this.givenName.Text.Trim() : "";
             string familyName = this.familyName != null ? this.familyName.Text.Trim() : "";
 
-            var borrower = Database.books.Find((b) => b.isbn == email);
+            var borrower = Database.borrowers.Find((b) => b.email == email);
             if (borrower != null)
             {
                 MessageBox.Show(
@@ -37,7 +37,7 @@
                 $"Successfully added!", "Prompt",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
-            Session.dashboard.RefreshBooks();
+            Session.dashboard.RefreshBorrowers();
             Reset();
             return;
         }
